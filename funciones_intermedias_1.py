@@ -51,17 +51,13 @@ iterarDiccionario2("nombre", cantantes)
 #4. Iterar a través de un diccionario con valores de lista
 def imprimirInformacion(diccionario):
     for clave, valores in diccionario.items():
-        # Imprime la cantidad de elementos y la clave en mayúsculas
         print(f"{len(valores)} {clave.upper()}")
-        # Imprime cada valor de la lista en una línea nueva
         for valor in valores:
             print(valor)
-        print()  # Línea en blanco para separar cada sección
-
-# Ejemplo de uso
+        print()  
+        
 costa_rica = {
     "ciudades": ["San José", "Limón", "Cartago", "Puntarenas"],
     "comidas": ["gallo pinto", "casado", "tamales", "chifrijo", "olla de carne"]
 }
-
 imprimirInformacion(costa_rica)
